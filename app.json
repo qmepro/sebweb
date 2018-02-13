@@ -1,0 +1,24 @@
+{
+  "name": "sebweb",
+  "scripts": {
+  },
+  "env": {
+    "HOST": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-static.git"
+    }
+  ]
+}
